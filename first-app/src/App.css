@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box; /* Make padding and border inclusive */
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Use a simple font */
+  background-color: #f4f4f4; /* Light background color */
+  margin: 0; /* Remove default margin */
+  padding: 20px; /* Add some padding */
+}
+
+.App {
+  max-width: 600px; /* Limit width for better readability */
+  margin: auto; /* Center the app */
+  background: white; /* White background for the app */
+  padding: 20px; /* Add padding */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+  color: #333; /* Darker text color for headings */
+}
+
+.timer {
+  font-size: 20px; /* Bigger font for timer */
+  margin: 20px 0; /* Space around timer */
+  color: #e63946; /* Red color for timer */
+}
+
+.question {
+  margin: 20px 0; /* Space around question */
+}
+
+.options {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack options vertically */
+  margin: 20px 0; /* Space around options */
+}
+
+.option {
+  padding: 10px; /* Space inside option */
+  margin: 5px 0; /* Space between options */
+  border: 1px solid #ccc; /* Light border for options */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background 0.3s; /* Smooth background change */
+}
+
+.option.selected {
+  background-color: lightgray; /* Color for selected option */
+}
+
+.option.correct {
+  background-color: green; /* Color for correct answer */
+  color: white; /* White text */
+}
+
+.option.incorrect {
+  background-color: red; /* Color for incorrect answer */
+  color: white; /* White text */
+}
+
+.popup {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white; /* White text */
+  padding: 20px; /* Space around popup */
+  border-radius: 5px; /* Rounded corners */
+  margin-top: 20px; /* Space above popup */
+}
+
+.submit-button,
+.next-button {
+  padding: 10px 15px; /* Space inside button */
+  margin: 10px 0; /* Space around button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  color: white; /* White text */
+  background-color: #007bff; /* Bootstrap primary color */
+  transition: background 0.3s; /* Smooth background change */
+}
+
+.submit-button:hover,
+.next-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.summary {
+  text-align: center; /* Center text for summary */
+  margin-top: 20px; /* Space above summary */
+}
+
+.summary button {
+  padding: 10px 15px; /* Space inside restart button */
+  margin-top: 10px; /* Space above button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  background-color: #28a745; /* Green background for restart */
+  color: white; /* White text */
+}
+
+.summary button:hover {
+  background-color: #218838; /* Darker shade on hover */
+}
+.popup {
+  position: fixed; /* Fix position for popup */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the popup */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  color: white; /* White text */
+  padding: 20px; /* Space around popup */
+  border-radius: 5px; /* Rounded corners */
+  z-index: 1000; /* Ensure popup is above other elements */
+}
